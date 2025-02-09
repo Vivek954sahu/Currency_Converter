@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lavenderblush;
+}
+.container{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vw;
+}
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input{
+    border: 1px solid lightblue;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.select-container img{
+    margin: 2px;
+    max-width: 1.75rem;
+}
+.select-container{
+    display: flex;
+    width: 7rem;
+    background-color: lavender;
+    border-radius: 0.5rem;
+    border: 1px solid lightblue;
+    padding: 2px;
+}
+.select-container select{
+    margin: 2px;
+    padding: 2px;
+    font-size: 1rem;
+    width: auto;
+}
+
+form button{
+    height: 2rem;
+    background-color: #b756a0;
+    color: rgb(255, 251, 251);
+    font-size: 1.15rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1rem;
+}
+
+
+.msg{
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    margin-top: 0.75rem;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+
+/* media queries for responsive design */
+
+
+@media  (max-width: 376px) {
+    .container{
+        padding: 15px;
+        width: 75vw;
+    }
+    form select,button,input{
+        width: 95%;
+    }
+    form input{
+        margin: 1.5px;
+    }
+    .dropdown i{
+        font-size: 1rem;
+    }
+    .msg{
+        padding: 8px;
+    }
+}
+
+/* @media (min-width:376px) and (max-width:576px){
+
+}
+@media (min-width:577px) and (max-width:768px){
+    
+}
+@media (min-width:769px) and (max-width:991px){
+    
+}
+@media (min-width:992px) and (max-width:1199px){
+    
+} */
